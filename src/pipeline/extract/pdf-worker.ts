@@ -25,7 +25,6 @@ self.onmessage = async (
       const loadingTask = pdfjsLib.getDocument({
         data: new Uint8Array(fileData),
         password: password || undefined,
-        isEvalSupported: false,
         useSystemFonts: true,
       });
 
@@ -76,7 +75,7 @@ self.onmessage = async (
         page.cleanup();
       }
 
-      await pdfDoc.destroy();
+      await loadingTask.destroy();
 
       const doc: ExtractedDoc = {
         pages: numPages,

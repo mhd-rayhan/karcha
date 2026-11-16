@@ -51,7 +51,7 @@ export function parseDelimitedText(text: string, filename: string): ExtractedDoc
       const isTableEndMarker =
         hadDataRow &&
         (/STATEMENT SUMMARY/i.test(line) ||
-          /^[\*\s]{20,}$/.test(line.trim()) ||
+          /^[*\s]{20,}$/.test(line.trim()) ||
           /End Of Statement/i.test(line));
 
       if (isTableEndMarker) {

@@ -1,6 +1,6 @@
+import { describe, expect, it } from 'vitest';
 import { formatPaise, paiseToRupees, toPaise } from '@/lib/money';
 import type { Paise } from '@/types/brands';
-import { describe, expect, it } from 'vitest';
 
 describe('Money lib (Integer Paise)', () => {
   it('converts numbers and strings to integer paise correctly without float error', () => {

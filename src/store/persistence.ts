@@ -61,7 +61,7 @@ export async function loadFromDB(): Promise<boolean> {
   try {
     const db = await getDB();
     const loadedSettings = await db.get('settings', 'app_settings');
-    if (!loadedSettings || loadedSettings.persistence !== 'device') {
+    if (loadedSettings?.persistence !== 'device') {
       return false;
     }
 

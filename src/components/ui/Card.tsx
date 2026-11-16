@@ -18,14 +18,20 @@ export function Card({
 export function CardHeader({
   className = '',
   children,
-}: { className?: string; children: ComponentChildren }) {
+}: {
+  className?: string;
+  children: ComponentChildren;
+}) {
   return <div className={`flex flex-col space-y-1.5 p-5 ${className}`}>{children}</div>;
 }
 
 export function CardTitle({
   className = '',
   children,
-}: { className?: string; children: ComponentChildren }) {
+}: {
+  className?: string;
+  children: ComponentChildren;
+}) {
   return (
     <h3 className={`text-base font-semibold leading-none tracking-tight ${className}`}>
       {children}
@@ -36,13 +42,19 @@ export function CardTitle({
 export function CardDescription({
   className = '',
   children,
-}: { className?: string; children: ComponentChildren }) {
+}: {
+  className?: string;
+  children: ComponentChildren;
+}) {
   return <p className={`text-xs text-muted-foreground ${className}`}>{children}</p>;
 }
 
 export function CardContent({
   className = '',
   children,
-}: { className?: string; children: ComponentChildren }) {
+}: {
+  className?: string;
+  children: ComponentChildren;
+}) {
   return <div className={`p-5 pt-0 ${className}`}>{children}</div>;
 }

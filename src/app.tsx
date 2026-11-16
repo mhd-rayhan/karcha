@@ -1,3 +1,4 @@
+import { useEffect } from 'preact/hooks';
 import { ImportView } from '@/components/import/ImportView';
 import { PasswordDialog } from '@/components/import/PasswordDialog';
 import { OverviewView } from '@/components/overview/OverviewView';
@@ -9,7 +10,6 @@ import { Logo } from '@/components/ui/Logo';
 import { useTheme } from '@/hooks/use-theme';
 import { activeTab, hasUnsavedData, settings, statements } from '@/store';
 import { loadFromDB } from '@/store/persistence';
-import { useEffect } from 'preact/hooks';
 
 export function App() {
   const { theme, setTheme } = useTheme();

@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { describe, expect, it } from 'vitest';
 import { processExtractedDoc } from '@/pipeline';
 import { detectBankTemplate } from '@/pipeline/detect/detector';
 import { parseDelimitedText } from '@/pipeline/extract/csv-sniffer';
 import { detectTransfers } from '@/pipeline/transfers/matcher';
-import { describe, expect, it } from 'vitest';
 
 describe('HDFC Bank Statement Parser', () => {
   it('parses synthetic HDFC TXT fixed-width report with verified tie-out', async () => {

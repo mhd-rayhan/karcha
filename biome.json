@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.8/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["node_modules", "dist", "public", ".pnpm-store"]
+    "includes": ["src/**", "test/**", "scripts/**", "vite.config.ts"]
   },
   "formatter": {
     "enabled": true,
@@ -18,7 +18,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "security": {
         "noDangerouslySetInnerHtml": "error"
       },
@@ -28,21 +28,29 @@
       "suspicious": {
         "noExplicitAny": "off",
         "noAssignInExpressions": "off",
-        "noAsyncPromiseExecutor": "off"
+        "noAsyncPromiseExecutor": "off",
+        "noUnknownAtRules": "off"
       },
       "a11y": {
         "noLabelWithoutControl": "warn",
         "useKeyWithClickEvents": "warn",
         "noSvgWithoutTitle": "off",
-        "useSemanticElements": "off"
+        "useSemanticElements": "off",
+        "noStaticElementInteractions": "off"
       },
       "complexity": {
-        "useOptionalChain": "warn"
+        "useOptionalChain": "warn",
+        "noImportantStyles": "off"
       },
       "style": {
         "useConst": "error",
         "noNonNullAssertion": "off"
       }
+    }
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
     }
   },
   "javascript": {

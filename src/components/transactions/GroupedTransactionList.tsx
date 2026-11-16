@@ -1,9 +1,9 @@
+import { useState } from 'preact/hooks';
 import { Badge } from '@/components/ui/Badge';
 import { formatPaise } from '@/lib/money';
 import { accounts, groupByField } from '@/store';
 import type { TxnGroup } from '@/store/selectors';
 import type { Txn } from '@/types/models';
-import { useState } from 'preact/hooks';
 import { RowEditor } from '../review/RowEditor';
 
 export interface GroupedTransactionListProps {

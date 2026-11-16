@@ -1,7 +1,7 @@
+import { describe, expect, it } from 'vitest';
 import { categoriseTxn } from '@/pipeline/categorise/categoriser';
 import { parseNarration } from '@/pipeline/categorise/merchant';
 import type { Paise } from '@/types/brands';
-import { describe, expect, it } from 'vitest';
 
 describe('Expanded Indian Financial Categorisation', () => {
   it('correctly categorises food delivery and quick commerce', () => {

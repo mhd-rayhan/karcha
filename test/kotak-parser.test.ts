@@ -1,9 +1,9 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { describe, expect, it } from 'vitest';
 import { processExtractedDoc } from '@/pipeline';
 import { detectBankTemplate } from '@/pipeline/detect/detector';
 import { parseDelimitedText } from '@/pipeline/extract/csv-sniffer';
-import { describe, expect, it } from 'vitest';
 
 describe('Kotak Bank Statement Parser', () => {
   it('parses synthetic Kotak CSV with Dr/Cr column and verified tie-out', async () => {

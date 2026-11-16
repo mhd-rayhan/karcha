@@ -1,5 +1,5 @@
-import { exportTransactionsToCsv, sanitizeCsvCell } from '@/lib/export';
 import { describe, expect, it } from 'vitest';
+import { sanitizeCsvCell } from '@/lib/export';
 
 describe('Export Library & Formula Injection Neutralisation', () => {
   it('neutralises dangerous spreadsheet formula prefixes (=, +, -, @)', () => {

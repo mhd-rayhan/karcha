@@ -1,7 +1,7 @@
+import { useState } from 'preact/hooks';
 import { Button } from '@/components/ui/Button';
 import { Card } from '@/components/ui/Card';
 import { importQueue, isProcessing, useFileImport } from '@/hooks/use-file-import';
-import { useState } from 'preact/hooks';
 
 export function FileDropZone() {
   const [isDragOver, setIsDragOver] = useState(false);

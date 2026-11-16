@@ -1,5 +1,5 @@
-import { settings } from '@/store';
 import { useEffect } from 'preact/hooks';
+import { settings } from '@/store';
 
 export function useTheme() {
   const currentTheme = settings.value.theme;

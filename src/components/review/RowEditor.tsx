@@ -1,3 +1,4 @@
+import { useState } from 'preact/hooks';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
@@ -7,13 +8,16 @@ import { paiseToRupees, toPaise } from '@/lib/money';
 import { updateTxn } from '@/store';
 import type { CategoryId, Paise } from '@/types/brands';
 import type { Txn } from '@/types/models';
-import { useState } from 'preact/hooks';
 
 export function RowEditor({
   txn,
   isOpen,
   onClose,
-}: { txn: Txn | null; isOpen: boolean; onClose: () => void }) {
+}: {
+  txn: Txn | null;
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   if (!txn) return null;
 
   const [date, setDate] = useState(txn.date);

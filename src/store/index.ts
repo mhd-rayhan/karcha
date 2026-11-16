@@ -1,5 +1,5 @@
-import type { Account, CategoryId, Rule, Settings, Statement, Txn, TxnFlag } from '@/types/models';
 import { signal } from '@preact/signals';
+import type { Account, CategoryId, Rule, Settings, Statement, Txn, TxnFlag } from '@/types/models';
 import { clearDB, saveToDB } from './persistence';
 
 export type AppTab =

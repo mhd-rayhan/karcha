@@ -1,5 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
-import { monthlyChartData } from '@/store/selectors';
 import {
   Bar,
   BarChart,
@@ -10,6 +8,8 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { monthlyChartData } from '@/store/selectors';
 
 // Preact compatibility wrappers for Recharts components
 const ResponsiveContainerComp = ResponsiveContainer as any;
@@ -70,7 +70,7 @@ export function MonthlyBarChart() {
               />
               <TooltipComp
                 content={({ active, payload, label }: any) => {
-                  if (active && payload && payload.length) {
+                  if (active && payload?.length) {
                     return (
                       <div className="rounded-lg border border-border bg-card p-2.5 shadow-md text-xs space-y-1">
                         <div className="font-semibold text-foreground">{label}</div>

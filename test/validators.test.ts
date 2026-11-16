@@ -1,7 +1,7 @@
+import { describe, expect, it } from 'vitest';
 import { validateStatement } from '@/pipeline/validate/validators';
 import type { IsoDate, Paise } from '@/types/brands';
 import type { Txn } from '@/types/models';
-import { describe, expect, it } from 'vitest';
 
 describe('Statement Validators', () => {
   it('verifies a statement when opening + amounts = closing and running balance is consistent', () => {

@@ -5,11 +5,11 @@ import { Select } from '@/components/ui/Select';
 import categoriesJson from '@/data/categories.json';
 import { downloadFile, exportTransactionsToCsv, exportTransactionsToJson } from '@/lib/export';
 import {
-  type GroupByField,
   accounts,
   filterAccountId,
   filterCategory,
   filterDirection,
+  type GroupByField,
   groupByField,
   searchQuery,
   sortAsc,

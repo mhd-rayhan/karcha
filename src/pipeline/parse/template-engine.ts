@@ -473,7 +473,7 @@ function extractMetadata(doc: ExtractedDoc, template: BankTemplate) {
   // Extract account or card last 4
   let last4 = 'XXXX';
   const accMatch = fullText.match(
-    /(?:Account|A\/c|Card|Acct|ending in)\s*(?:No|Number|#)?\.?\s*[:\s]*([X*\d\s\-]{4,30})/i,
+    /(?:Account|A\/c|Card|Acct|ending in)\s*(?:No|Number|#)?\.?\s*[:\s]*([X*\d\s-]{4,30})/i,
   );
   if (accMatch) {
     const digits = accMatch[1].replace(/\D/g, '');
@@ -486,7 +486,7 @@ function extractMetadata(doc: ExtractedDoc, template: BankTemplate) {
     if (listMatch) {
       last4 = listMatch[1].slice(-4);
     } else {
-      const maskedMatch = fullText.match(/(?:[X*]{2,}[\s\-]*){1,3}(\d{4})/i);
+      const maskedMatch = fullText.match(/(?:[X*]{2,}[\s-]*){1,3}(\d{4})/i);
       if (maskedMatch) {
         last4 = maskedMatch[1];
       }

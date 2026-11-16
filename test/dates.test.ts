@@ -1,5 +1,5 @@
-import { formatDisplayDate, parseDate, toIsoDate } from '@/lib/dates';
 import { describe, expect, it } from 'vitest';
+import { formatDisplayDate, parseDate, toIsoDate } from '@/lib/dates';
 
 describe('Dates lib', () => {
   it('parses direct ISO dates', () => {

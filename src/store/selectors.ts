@@ -1,3 +1,4 @@
+import { computed } from '@preact/signals';
 import categoriesJson from '@/data/categories.json';
 import { formatDisplayDate } from '@/lib/dates';
 import { paiseToRupees } from '@/lib/money';
@@ -8,7 +9,6 @@ import {
 } from '@/pipeline/categorise/merchant';
 import type { Paise } from '@/types/brands';
 import type { Txn } from '@/types/models';
-import { computed } from '@preact/signals';
 import {
   accounts,
   filterAccountId,

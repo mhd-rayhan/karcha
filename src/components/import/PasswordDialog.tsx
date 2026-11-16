@@ -1,8 +1,8 @@
+import { useState } from 'preact/hooks';
 import { Button } from '@/components/ui/Button';
 import { Input } from '@/components/ui/Input';
 import { Modal } from '@/components/ui/Modal';
 import { passwordPrompt, useFileImport } from '@/hooks/use-file-import';
-import { useState } from 'preact/hooks';
 
 function getBankPasswordTip(filename: string): string {
   const f = filename.toLowerCase();

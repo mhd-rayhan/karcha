@@ -1,5 +1,5 @@
-import { assignDeterministicTxnIds, computeTxnId } from '@/pipeline/dedup/dedup';
 import { describe, expect, it } from 'vitest';
+import { assignDeterministicTxnIds, computeTxnId } from '@/pipeline/dedup/dedup';
 
 describe('Deduplication & Deterministic IDs', () => {
   it('is idempotent: same transaction yields same ID', async () => {

@@ -1,8 +1,8 @@
+import { beforeEach, describe, expect, it } from 'vitest';
 import { accounts, groupByField, txns } from '@/store';
 import { groupedTxns } from '@/store/selectors';
 import type { IsoDate, Paise } from '@/types/brands';
 import type { Txn } from '@/types/models';
-import { beforeEach, describe, expect, it } from 'vitest';
 
 describe('Transaction Group By Selector', () => {
   const sampleTxns: Txn[] = [

@@ -1,9 +1,9 @@
+import { useVirtualizer } from '@tanstack/react-virtual';
+import { useRef, useState } from 'preact/hooks';
 import { Badge } from '@/components/ui/Badge';
 import { formatPaise } from '@/lib/money';
 import { accounts } from '@/store';
 import type { Txn } from '@/types/models';
-import { useVirtualizer } from '@tanstack/react-virtual';
-import { useRef, useState } from 'preact/hooks';
 import { RowEditor } from '../review/RowEditor';
 
 export function TransactionTable({ txns }: { txns: Txn[] }) {

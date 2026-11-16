@@ -1,9 +1,9 @@
+import { signal } from '@preact/signals';
 import { processExtractedDoc } from '@/pipeline';
 import { parseDelimitedText } from '@/pipeline/extract/csv-sniffer';
 import { parseExcelWorkbook } from '@/pipeline/extract/excel-parser';
 import type { ExtractedDoc, WorkerMessage } from '@/pipeline/extract/types';
 import { addStatementData, rules, txns } from '@/store';
-import { signal } from '@preact/signals';
 
 export interface FileImportItem {
   id: string;
