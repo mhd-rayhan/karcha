@@ -27,7 +27,7 @@
     "@biomejs/biome": "^2.6.7",
     "@preact/preset-vite": "^2.9.5",
     "@tailwindcss/vite": "^4.3.5",
-    "@types/node": "^22.13.9",
+    "@types/node": "^26.6.6",
     "tailwindcss": "^4.3.5",
     "typescript": "^5.7.3",
     "vite": "^6.1.0",
