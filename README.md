@@ -3,7 +3,6 @@
 [![CI](https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml/badge.svg)](https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Telemetry](https://img.shields.io/badge/Telemetry-0%25%20(None)-emerald.svg)](#verifiable-privacy-guarantee)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmhd-rayhan%2Fkarcha)
 
 A local-first, privacy-focused bank and credit card statement analyzer engineered specifically for the Indian banking ecosystem. All processing occurs entirely within the client's browser environment using Web Workers, in-memory signals, and local IndexedDB storage. No financial documents, passwords, or personal data ever leave your machine.
 
@@ -114,17 +113,6 @@ pnpm pii:check
 # Compile production bundle
 pnpm build
 ```
-
----
-
-## Deployment to Vercel
-
-Kharcha is fully pre-configured for automated continuous deployment on Vercel:
-
-1. Push your repository to GitHub.
-2. Import the repository in your [Vercel Dashboard](https://vercel.com/new).
-3. Vercel automatically detects the Vite configuration and deploys using `pnpm build`.
-4. Production security headers (CSP, Referrer-Policy, Permissions-Policy, X-Frame-Options) defined in `vercel.json` are applied automatically to all responses.
 
 ---
 
