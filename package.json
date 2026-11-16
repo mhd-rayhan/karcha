@@ -18,7 +18,7 @@
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.1.0",
     "idb": "^8.0.2",
-    "pdfjs-dist": "^4.10.38",
+    "pdfjs-dist": "^6.5.438",
     "preact": "^10.25.4",
     "recharts": "^2.15.1",
     "xlsx": "^0.18.5"
