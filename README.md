@@ -1,8 +1,20 @@
-# Kharcha
+<p align="center">
+  <img src="public/logo.png" alt="Kharcha Logo" width="120" height="120" />
+</p>
 
-[![CI](https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml/badge.svg)](https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Zero Telemetry](https://img.shields.io/badge/Telemetry-0%25%20(None)-emerald.svg)](#verifiable-privacy-guarantee)
+<h1 align="center">Kharcha</h1>
+
+<p align="center">
+  <strong>Local-first, privacy-focused bank & credit card statement analyzer for the Indian financial ecosystem.</strong>
+  <br />
+  100% client-side • Zero cloud uploads • Integer-Paise precision • Instant tie-out verification
+</p>
+
+<p align="center">
+  <a href="https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml"><img src="https://github.com/mhd-rayhan/karcha/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
+  <a href="#verifiable-privacy-guarantee"><img src="https://img.shields.io/badge/Privacy-100%25%20Local%20(Zero--Cloud)-10b981.svg" alt="Zero Cloud" /></a>
+</p>
 
 A local-first, privacy-focused bank and credit card statement analyzer engineered specifically for the Indian banking ecosystem. All processing occurs entirely within the client's browser environment using Web Workers, in-memory signals, and local IndexedDB storage. No financial documents, passwords, or personal data ever leave your machine.
 
