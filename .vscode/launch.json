@@ -1,0 +1,46 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Brave Browser",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+      "sourceMaps": true
+    },
+    {
+      "name": "Launch Chromium",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "runtimeExecutable": "/Applications/Chromium.app/Contents/MacOS/Chromium",
+      "sourceMaps": true
+    },
+    {
+      "name": "Launch Chrome against localhost",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/src",
+      "sourceMaps": true
+    },
+    {
+      "name": "Debug Vitest Tests",
+      "type": "node",
+      "request": "launch",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
+      "args": ["run"]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run Site in Brave",
+      "configurations": ["Launch Brave Browser"]
+    }
+  ]
+}
