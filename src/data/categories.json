@@ -1,0 +1,164 @@
+[
+  { "id": "food", "name": "Food & Dining", "icon": "utensils", "color": "#f97316" },
+  { "id": "food:groceries", "name": "Groceries & Quick Commerce", "parent": "food" },
+  { "id": "food:delivery", "name": "Food Delivery (Swiggy/Zomato)", "parent": "food" },
+  { "id": "food:restaurants", "name": "Restaurants & Dining", "parent": "food" },
+  { "id": "food:cafes", "name": "Cafes, Bakeries & Tea", "parent": "food" },
+
+  { "id": "transport", "name": "Transport & Mobility", "icon": "car", "color": "#3b82f6" },
+  { "id": "transport:fuel", "name": "Fuel & Petrol", "parent": "transport" },
+  { "id": "transport:rides", "name": "Cabs & Auto Rides (Uber/Ola/Rapido)", "parent": "transport" },
+  { "id": "transport:transit", "name": "Metro & Local Transit", "parent": "transport" },
+  { "id": "transport:toll", "name": "Fastag & Tolls", "parent": "transport" },
+  { "id": "transport:trains", "name": "Indian Railways (IRCTC)", "parent": "transport" },
+  { "id": "transport:flights", "name": "Flights & Airlines", "parent": "transport" },
+  { "id": "transport:bus", "name": "Intercity Buses", "parent": "transport" },
+
+  { "id": "shopping", "name": "Shopping & E-Commerce", "icon": "shopping-bag", "color": "#ec4899" },
+  {
+    "id": "shopping:online",
+    "name": "Online Marketplaces (Amazon/Flipkart)",
+    "parent": "shopping"
+  },
+  { "id": "shopping:apparel", "name": "Clothing & Apparel", "parent": "shopping" },
+  { "id": "shopping:footwear", "name": "Shoes & Footwear", "parent": "shopping" },
+  { "id": "shopping:electronics", "name": "Electronics & Mobiles", "parent": "shopping" },
+  { "id": "shopping:home", "name": "Furniture & Home Decor", "parent": "shopping" },
+  { "id": "shopping:beauty", "name": "Cosmetics & Personal Care", "parent": "shopping" },
+  { "id": "shopping:luxury", "name": "Jewellery & Watches", "parent": "shopping" },
+
+  { "id": "bills", "name": "Bills & Utilities", "icon": "zap", "color": "#eab308" },
+  { "id": "bills:electricity", "name": "Electricity (DISCOMs)", "parent": "bills" },
+  { "id": "bills:telecom", "name": "Mobile & Telecom", "parent": "bills" },
+  { "id": "bills:broadband", "name": "Broadband & Wi-Fi", "parent": "bills" },
+  { "id": "bills:water_gas", "name": "Piped Gas & Water", "parent": "bills" },
+  { "id": "bills:dth", "name": "DTH & Cable TV", "parent": "bills" },
+
+  { "id": "housing", "name": "Housing & Real Estate", "icon": "home", "color": "#8b5cf6" },
+  { "id": "housing:rent", "name": "House Rent", "parent": "housing" },
+  {
+    "id": "housing:maintenance",
+    "name": "Society Maintenance (MyGate/NoBroker)",
+    "parent": "housing"
+  },
+  {
+    "id": "housing:services",
+    "name": "Home Services & Repairs (Urban Company)",
+    "parent": "housing"
+  },
+  { "id": "housing:domestic_help", "name": "Maid, Cook & Domestic Help", "parent": "housing" },
+
+  { "id": "health", "name": "Health & Medical", "icon": "heart-pulse", "color": "#ef4444" },
+  { "id": "health:pharmacy", "name": "Pharmacy & Medicines", "parent": "health" },
+  { "id": "health:doctor", "name": "Doctor Consultations & Clinics", "parent": "health" },
+  { "id": "health:diagnostics", "name": "Diagnostics & Lab Tests", "parent": "health" },
+  { "id": "health:hospital", "name": "Hospitals & Surgeries", "parent": "health" },
+
+  { "id": "education", "name": "Education & Coaching", "icon": "book-open", "color": "#06b6d4" },
+  { "id": "education:school_fees", "name": "School & College Fees", "parent": "education" },
+  { "id": "education:coaching", "name": "Test Prep & Coaching Institutes", "parent": "education" },
+  { "id": "education:courses", "name": "Online Courses & EdTech", "parent": "education" },
+  { "id": "education:books", "name": "Books & Stationery", "parent": "education" },
+
+  { "id": "travel", "name": "Travel & Vacations", "icon": "plane", "color": "#14b8a6" },
+  { "id": "travel:hotels", "name": "Hotels & Stays (MakeMyTrip/Airbnb)", "parent": "travel" },
+  { "id": "travel:holidays", "name": "Holiday Packages & Sightseeing", "parent": "travel" },
+
+  { "id": "entertainment", "name": "Entertainment & Leisure", "icon": "film", "color": "#a855f7" },
+  {
+    "id": "entertainment:streaming",
+    "name": "Streaming OTT (Netflix/Hotstar/Spotify)",
+    "parent": "entertainment"
+  },
+  {
+    "id": "entertainment:movies",
+    "name": "Movies & Events (BookMyShow)",
+    "parent": "entertainment"
+  },
+  { "id": "entertainment:gaming", "name": "Gaming, Consoles & Apps", "parent": "entertainment" },
+
+  { "id": "lifestyle", "name": "Personal Care & Fitness", "icon": "smile", "color": "#ec4899" },
+  { "id": "lifestyle:fitness", "name": "Gym & Fitness (Cult.fit)", "parent": "lifestyle" },
+  { "id": "lifestyle:salon", "name": "Salon, Spa & Grooming", "parent": "lifestyle" },
+  { "id": "lifestyle:pets", "name": "Pet Food & Vet Care", "parent": "lifestyle" },
+
+  {
+    "id": "investments",
+    "name": "Investments & Wealth",
+    "icon": "trending-up",
+    "color": "#10b981"
+  },
+  {
+    "id": "investments:stocks",
+    "name": "Stocks & Trading (Zerodha/Groww)",
+    "parent": "investments"
+  },
+  { "id": "investments:mutual_funds", "name": "Mutual Funds, SIP & AMCs", "parent": "investments" },
+  { "id": "investments:gold", "name": "Digital Gold & SGBs", "parent": "investments" },
+  {
+    "id": "investments:government",
+    "name": "PPF, NPS & Government Schemes",
+    "parent": "investments"
+  },
+  { "id": "investments:crypto", "name": "Cryptocurrency Exchanges", "parent": "investments" },
+
+  { "id": "insurance", "name": "Insurance", "icon": "shield-check", "color": "#0ea5e9" },
+  {
+    "id": "insurance:life",
+    "name": "Term & Life Insurance (LIC/HDFC Life)",
+    "parent": "insurance"
+  },
+  { "id": "insurance:health", "name": "Health & Mediclaim Insurance", "parent": "insurance" },
+  { "id": "insurance:vehicle", "name": "Motor & Vehicle Insurance", "parent": "insurance" },
+
+  { "id": "loans", "name": "Loans & Credit", "icon": "landmark", "color": "#64748b" },
+  { "id": "loans:emi", "name": "Home, Auto & Personal Loan EMI", "parent": "loans" },
+  { "id": "loans:bnpl", "name": "Buy Now Pay Later (Simpl/LazyPay)", "parent": "loans" },
+
+  { "id": "government", "name": "Government & Taxes", "icon": "file-text", "color": "#f59e0b" },
+  { "id": "government:taxes", "name": "Income Tax & Advance Tax", "parent": "government" },
+  { "id": "government:challans", "name": "Traffic Challans & Penalties", "parent": "government" },
+  {
+    "id": "government:services",
+    "name": "Passport, Civic & Stamp Duty Fees",
+    "parent": "government"
+  },
+
+  { "id": "charity", "name": "Charity & Donations", "icon": "heart", "color": "#f43f5e" },
+  { "id": "charity:donations", "name": "NGOs & Social Causes", "parent": "charity" },
+  {
+    "id": "charity:religious",
+    "name": "Religious Trusts & Places of Worship",
+    "parent": "charity"
+  },
+
+  { "id": "fees", "name": "Fees & Charges", "icon": "alert-circle", "color": "#dc2626" },
+  {
+    "id": "fees:bank_charges",
+    "name": "Bank Charges, IMPS/NEFT & Minimum Balance",
+    "parent": "fees"
+  },
+  { "id": "fees:interest", "name": "Card Finance & Interest Charges", "parent": "fees" },
+  { "id": "fees:forex", "name": "Forex Markup Fee", "parent": "fees" },
+
+  { "id": "cash", "name": "Cash & ATM", "icon": "banknote", "color": "#84cc16" },
+  { "id": "cash:atm", "name": "ATM Cash Withdrawal", "parent": "cash" },
+
+  { "id": "income", "name": "Income & Receipts", "icon": "arrow-down-left", "color": "#10b981" },
+  { "id": "income:salary", "name": "Salary & Payroll", "parent": "income" },
+  { "id": "income:interest", "name": "Savings & FD Interest", "parent": "income" },
+  { "id": "income:dividend", "name": "Dividends & Capital Payouts", "parent": "income" },
+  { "id": "income:refund", "name": "Tax, Merchant & Payment Refunds", "parent": "income" },
+  { "id": "income:freelance", "name": "Consulting & Professional Receipts", "parent": "income" },
+
+  { "id": "transfers", "name": "Transfers & Self", "icon": "repeat", "color": "#6b7280" },
+  { "id": "transfers:self", "name": "Self Account Transfer", "parent": "transfers" },
+  {
+    "id": "transfers:card_payment",
+    "name": "Credit Card Bill Payment (CRED/CheQ)",
+    "parent": "transfers"
+  },
+  { "id": "transfers:wallet", "name": "Wallet Loads (Paytm/Amazon Pay)", "parent": "transfers" },
+
+  { "id": "uncategorised", "name": "Uncategorised", "icon": "help-circle", "color": "#9ca3af" }
+]

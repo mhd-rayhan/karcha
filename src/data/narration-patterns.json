@@ -1,0 +1,58 @@
+{
+  "upi": [
+    {
+      "pattern": "UPI/([^/]+)/([A-Za-z0-9.\\-_]+@[A-Za-z0-9.\\-_]+)/([^/]*)/([^/]*)/(\\d{12})/([^/]*)",
+      "fields": { "payee": 1, "vpa": 2, "ref": 5 }
+    },
+    {
+      "pattern": "UPI/(?:CR|DR)/(\\d{12})/([^/]+)/([A-Za-z0-9.\\-_]+@[A-Za-z0-9.\\-_]+)",
+      "fields": { "ref": 1, "payee": 2, "vpa": 3 }
+    },
+    {
+      "pattern": "UPI/([A-Za-z0-9.\\-_]+@[A-Za-z0-9.\\-_]+)/(\\d{12})/([^/]+)",
+      "fields": { "vpa": 1, "ref": 2, "payee": 3 }
+    },
+    {
+      "pattern": "UPI-([A-Za-z0-9.\\-_]+@[A-Za-z0-9.\\-_]+)-(\\d{12})",
+      "fields": { "vpa": 1, "ref": 2 }
+    },
+    {
+      "pattern": "UPI/(?:PAYTMQR|BHARATPE|PHONEPEQR|RAZORPAY)/([^/]+)/(\\d{12})",
+      "fields": { "payee": 1, "ref": 2 }
+    },
+    {
+      "pattern": "UPI/(\\d{12})/([^/]+)",
+      "fields": { "ref": 1, "payee": 2 }
+    },
+    {
+      "pattern": "UPI/([^/]+)/(\\d{12})",
+      "fields": { "payee": 1, "ref": 2 }
+    }
+  ],
+  "imps": [
+    {
+      "pattern": "IMPS(?:/P2A)?/(\\d+)/([^/]+)",
+      "fields": { "ref": 1, "payee": 2 }
+    },
+    {
+      "pattern": "IMPS-([A-Z0-9]+)-([^/\\-]+)",
+      "fields": { "ref": 1, "payee": 2 }
+    }
+  ],
+  "neft": [
+    {
+      "pattern": "NEFT(?:-|/)([A-Z0-9]+)(?:-|/)([^/]+)",
+      "fields": { "ref": 1, "payee": 2 }
+    }
+  ],
+  "pos": [
+    {
+      "pattern": "POS(?:/|\\s+)(\\d+)(?:/|\\s+)(.+)",
+      "fields": { "ref": 1, "merchant": 2 }
+    },
+    {
+      "pattern": "E-COMM(?:/|\\s+)(\\d+)(?:/|\\s+)(.+)",
+      "fields": { "ref": 1, "merchant": 2 }
+    }
+  ]
+}
