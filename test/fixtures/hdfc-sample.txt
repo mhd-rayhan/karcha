@@ -1,0 +1,23 @@
+HDFC BANK Ltd.                                     Page No .:   1                                        Statement of accounts
+                                                                             Account Branch : CHURCHGATE INDUSTRY HOUSE
+                                                                             Cust ID        : 12345678
+MR SAMPLE USER                                                               Account No     : 00000000003254   OTHER
+SAMPLE ADDRESS                                                               Statement From : 01/10/2026  To: 31/10/2026
+MUMBAI 400 001                                                              RTGS/NEFT IFSC : HDFC0000501    MICR : 400240002
+
+--------  ----------------------------------------  ----------------  --------  ------------------  ------------------  ------------------
+Date      Narration				    Chq./Ref.No.      Value Dt  Withdrawal Amt.        Deposit Amt.     Closing Balance
+--------  ----------------------------------------  ----------------  --------  ------------------  ------------------  ------------------
+03/10/26  UPI-OFFICE SUPPLIES STORE                 0000111122223333  03/10/26           1,500.00                              98,500.00   
+          ORDER ITEM 4421                                                                                                                   
+16/10/26  IMPS-INTER ACCOUNT TRANSFER               0000444455556666  16/10/26                            25,000.00           123,500.00   
+27/10/26  ELECTRICITY UTILITY PAYMENT               0000777788889999  27/10/26           3,500.00                             120,000.00   
+          CONSUMER ID 883921                                                                                                                
+********  ****************************************  ****************  ********  ******************  ******************  ******************
+******************************************************************************************************************************************
+
+         STATEMENT SUMMARY  :- 
+           Opening Balance                                                      Debits              Credits          Closing Bal 
+                100,000.00                                                    5,000.00            25,000.00           120,000.00 
+
+                                            ---  End Of Statement ---  
