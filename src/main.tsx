@@ -1,14 +1,17 @@
-import { inject } from '@vercel/analytics';
-import { injectSpeedInsights } from '@vercel/speed-insights';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { render } from 'preact';
 import { App } from './app';
 import './styles/globals.css';
 
-// Initialize Vercel Web Analytics & Speed Insights
-inject();
-injectSpeedInsights();
-
 const root = document.getElementById('app');
 if (root) {
-  render(<App />, root);
+  render(
+    <>
+      <App />
+      <Analytics />
+      <SpeedInsights />
+    </>,
+    root,
+  );
 }
