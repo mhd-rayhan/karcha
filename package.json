@@ -20,7 +20,7 @@
     "idb": "^8.0.2",
     "pdfjs-dist": "^6.5.438",
     "preact": "^10.25.4",
-    "recharts": "^3.10.1",
+    "recharts": "^3.11.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
